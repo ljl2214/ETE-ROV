@@ -1,0 +1,13 @@
+prefix=d:/Science/Codes/ETE/.conda/Library
+exec_prefix=d:/Science/Codes/ETE/.conda/Library
+libdir=d:/Science/Codes/ETE/.conda/Library/lib
+sharedlibdir=d:/Science/Codes/ETE/.conda/Library/lib
+includedir=d:/Science/Codes/ETE/.conda/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.3.1
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
