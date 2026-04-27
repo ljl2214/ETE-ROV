@@ -18,13 +18,7 @@ def vla_decision(image_path):
         import base64
         image_base64 = base64.b64encode(f.read()).decode("utf-8")#将图片转换为Base64字符串，以便通过API传输
 
-    # response = requests.post(url, json={
-    #     "model": "llava",
-    #     "prompt": prompt,
-    #     "images": [image_base64]
-    # })
-
-# 20260414 20:39修改：增加了stream参数，设置为False，确保一次性返回完整结果，避免分块输出导致的解析问题。
+   
     response = requests.post(url, json={
         "model": "llava",
         "prompt": prompt,
